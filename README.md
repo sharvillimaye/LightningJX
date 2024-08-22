@@ -45,7 +45,7 @@
     #include "lightningjx.h"
     ```
 
-2. Link Library: <br> *When compiling your C/C++ project, link against the LightningJX library*
+2. Link Library: <br> *When compiling your C/C++ project, link against the LightningJX library.*
 
     ```bash
     gcc -o yourproject yourproject.c -L/path/to/lightningjx -llightningjx
