@@ -1,6 +1,6 @@
 TARGET = lightningxml
 CC = gcc
-CFLAGS = -std=c99 -Wall -I.
+CFLAGS = -std=c99 -Wall -g -DLOG_USE_COLOR
 
 LINKER = gcc
 LFLAGS = -Wall -I. -lm
@@ -13,7 +13,6 @@ SOURCES := $(wildcard $(SRCDIR)/*.c)
 INCLUDES := $(wildcard $(SRCDIR)/*.h)
 OBJECTS := $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 rm = rm -f
-
 
 $(BINDIR)/$(TARGET): $(OBJECTS)
 	@$(LINKER) $(OBJECTS) $(LFLAGS) -o $@
