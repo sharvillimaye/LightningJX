@@ -128,7 +128,7 @@ int main() {
 }
 ```
 
-*More information about library usage in Python and C# can be found in the `examples/` directory.*
+*More information about library usage in Python and C# can be found in the `examples` directory.*
 
 ## Contributing
 
