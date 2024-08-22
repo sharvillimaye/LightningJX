@@ -1,6 +1,6 @@
 # LightningJX
 
-**LightningJX** is a high-performance, real-time data processor designed for efficiently handling JSON and XML data streams. Built with speed and flexibility in mind, LightningJX operates as a server where clients can connect and send data streams in real time. It can also be integrated as a library in C/C++, C#, and Python projects. Its lightweight design ensures minimal latency, making it ideal for applications requiring rapid and reliable data processing.
+**LightningJX** is a high-performance, real-time data processor designed for efficiently handling JSON and XML data streams. Built with speed and flexibility in mind, LightningJX operates as a server where clients can connect and send data streams in real time. It can also be integrated as a library in C/C++, C#, and Python projects. Its lightweight design ensures minimal latency, making it ideal for applications requiring rapid and reliable data processing.co
 
 ## Features
 
@@ -42,15 +42,39 @@ make
 ./bin/lightningjx-server [options]
 ```
 
-<!-- 
+
 ### Library Integration
 
 **C/C++**
 
+1) **Include Header:**
+```c
+#include "lightningjx.h"
+```
+2) **Link Library:** When compiling your C/C++ project, link against the LightningJX library:
+```bash
+gcc -o yourproject yourproject.c -L/path/to/lightningjx -llightningjx
+```
+
 **C#**
 
+1) **Add DLL Reference:** Add a reference to the LightningJX DLL in your C# project.
+2) **Use in Code:**
+```C#
+using LightningJX;
+```
+
 **Python**
--->
+
+1) **Install the Python Package:**
+```bash
+pip install lightningjx
+```
+2) **Use in Code:**
+```python
+import lightningjx
+```
+
 
 ## Usage
 
