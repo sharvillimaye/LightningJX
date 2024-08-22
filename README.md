@@ -1,6 +1,6 @@
 # LightningJX
 
-**LightningJX** is a high-performance, real-time data processor designed for efficiently handling JSON and XML data streams. Built with speed and flexibility in mind, LightningJX operates as a server where clients can connect and send data streams in real time. It can also be integrated as a library in C/C++, C#, and Python projects. Its lightweight design ensures minimal latency, making it ideal for applications requiring rapid and reliable data processing.co
+**LightningJX** is a high-performance, real-time data processor designed for efficiently handling JSON and XML data streams. Built with speed and flexibility in mind, LightningJX operates as a server where clients can connect and send data streams in real time. It can also be integrated as a library in C/C++, C#, and Python projects. Its lightweight design ensures minimal latency, making it ideal for applications requiring rapid and reliable data processing.
 
 ## Features
 
