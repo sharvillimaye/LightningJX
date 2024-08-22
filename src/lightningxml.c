@@ -1,19 +1,14 @@
+/**
+ * Copyright (c) 2024 Sharvil Limaye
+ *
+ * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the MIT license. See `LICENSE.md` for details.
+ */
+
 #include <stdio.h>
 #include <string.h>
 
-typedef enum {
-    STATE_START,
-    STATE_OPEN_TAG,
-    STATE_CLOSE_TAG,
-    STATE_CONTENT,
-    STATE_END
-} ParserState;
-
-typedef struct {
-    ParserState state;
-    char buffer[256];
-    size_t buffer_index;
-} LXML_Parser;
+#include "lightningxml.h"
 
 void start_element(LXML_Parser *parser, const char *name) {
     printf("Start element: %s\n", name);
@@ -85,15 +80,4 @@ void parse_xml(LXML_Parser *parser, const char *xml_data) {
         parser->buffer[parser->buffer_index] = '\0';
         characters(parser, parser->buffer);
     }
-}
-
-int main() {
-    LXML_Parser parser;
-    parser.state = STATE_START;
-    parser.buffer_index = 0;
-
-    const char *xml_data = "<root><child>Hello World</child></root>";
-    parse_xml(&parser, xml_data);
-
-    return 0;
 }

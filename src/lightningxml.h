@@ -10,9 +10,22 @@
 
 #define LIGHTNINGXML_VERSION "0.1.0"
 
+#define BUFFER_SIZE 1024
 
+typedef enum {
+    STATE_START,
+    STATE_OPEN_TAG,
+    STATE_CLOSE_TAG,
+    STATE_CONTENT,
+    STATE_END
+} ParserState;
 
+typedef struct {
+    ParserState state;
+    char buffer[BUFFER_SIZE];
+    size_t buffer_index;
+} LXML_Parser;
 
-
+void parse_xml(LXML_Parser *, const char *);
 
 #endif

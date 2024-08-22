@@ -14,15 +14,13 @@
 void printLogo();
 
 int main(int argc, char *argv[]) {
-    // Determine whether to run based on args or request for args
-    if (argc > 1) {
-        for (int i = 1; argv[i] != NULL; i++) {
-            printf("%s\n", argv[i]);
-        }
-    } else {
-        return EXIT_FAILURE;
-    }
-    
+    LXML_Parser parser;
+    parser.state = STATE_START;
+    parser.buffer_index = 0;
+
+    const char *xml_data = "<root><child>Hello World</child></root>";
+    parse_xml(&parser, xml_data);
+
     return EXIT_SUCCESS;
 }
 
