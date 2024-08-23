@@ -19,8 +19,8 @@
 1. Clone the Repository:
 
     ```bash
-    git clone https://github.com/yourusername/LightningJX.git
-    cd LightningJX
+    git clone https://github.com/sharvillimaye/lightningjx.git
+    cd lightningjx
     ```
 
 2. Build the Server:
@@ -32,7 +32,7 @@
 3. Run the Server:
 
     ```bash
-    ./lightningjx-server [options]
+    ./bin/lightningjx-server [options]
     ```
 
 ### Library Integration
@@ -94,7 +94,7 @@ To start the server, you need to specify the port and data type. However, the se
 
 The above command will start the server on port 8080 and process JSON data streams, logging them to `data.log`. 
 
-#### Server Settings
+#### Server Options
 
 * `-p <port>`: Specify the port on which the server will listen (default: 8080).
 * `-t <type>`: Specify the data type to process (`json` or `xml`).
