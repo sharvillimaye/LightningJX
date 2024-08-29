@@ -136,4 +136,4 @@ Contributions are welcome! Please submit pull requests, report issues, or sugges
 
 ## License
 
-LightningJX is licensed under the MIT License. See `LICENSE` for more details.
+Copyright (c) 2024 Sharvil Limaye. Released under the MIT License. See [LICENSE](LICENSE) for details.
